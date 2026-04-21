@@ -1,0 +1,63 @@
+Css
+body{
+    background:#f0ebf8;
+    font-family:Tahoma;
+    padding:20px;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+}
+
+.form-card{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+h1,h2{
+    text-align:center;
+    color:#673ab7;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+label{
+    display:block;
+    margin:6px 0;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#673ab7;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#512da8;
+}
+
+.timer{
+    background:white;
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+    border:2px solid #673ab7;
+    margin-bottom:15px;
+}
+
+.hidden{
+    display:none;
+}

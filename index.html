@@ -1,0 +1,205 @@
+نسخ التعليمات البرمجية
+Html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>امتحان تطبيقات الويب</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<!-- شاشة تسجيل الدخول -->
+<div id="login-screen" class="form-card">
+    <h1>امتحان تطبيقات الويب</h1>
+    <p>أدخل بياناتك للبدء</p>
+
+    <input type="text" id="name" placeholder="الاسم الكامل">
+    <input type="email" id="email" placeholder="البريد الإلكتروني">
+
+    <button onclick="startExam()">بدء الامتحان</button>
+</div>
+
+<!-- شاشة الامتحان -->
+<div id="exam-screen" class="hidden">
+    <div id="timer" class="timer">الوقت المتبقي: 20:00</div>
+    <h2 id="student-name"></h2>
+
+    <form id="quizForm">
+
+<!-- 1 -->
+<div class="form-card">
+<p>1️⃣ ماذا يعني HTML؟</p>
+<label><input type="radio" name="q1" value="1"> Hyper Text Markup Language</label>
+<label><input type="radio" name="q1" value="0"> High Text Machine Language</label>
+<label><input type="radio" name="q1" value="0"> Hyper Tool Language</label>
+</div>
+
+<!-- 2 -->
+<div class="form-card">
+<p>2️⃣ أكبر عنوان في HTML؟</p>
+<label><input type="radio" name="q2" value="1"> h1</label>
+<label><input type="radio" name="q2" value="0"> h6</label>
+<label><input type="radio" name="q2" value="0"> head</label>
+</div>
+
+<!-- 3 -->
+<div class="form-card">
+<p>3️⃣ أي لغة تعمل داخل المتصفح؟</p>
+<label><input type="radio" name="q3" value="1"> JavaScript</label>
+<label><input type="radio" name="q3" value="0"> PHP</label>
+<label><input type="radio" name="q3" value="0"> Python</label>
+</div>
+
+<!-- 4 -->
+<div class="form-card">
+<p>4️⃣ الرمز # في CSS يستخدم مع؟</p>
+<label><input type="radio" name="q4" value="1"> id</label>
+<label><input type="radio" name="q4" value="0"> class</label>
+<label><input type="radio" name="q4" value="0"> tag</label>
+</div>
+
+<!-- 5 -->
+<div class="form-card">
+<p>5️⃣ أي خاصية تغير لون الخلفية؟</p>
+<label><input type="radio" name="q5" value="1"> background-color</label>
+<label><input type="radio" name="q5" value="0"> color</label>
+<label><input type="radio" name="q5" value="0"> font-color</label>
+</div>
+
+<!-- 6 -->
+<div class="form-card">
+<p>6️⃣ كيف نكتب تعليق في JavaScript؟</p>
+<label><input type="radio" name="q6" value="1">// تعليق</label>
+<label><input type="radio" name="q6" value="0">&lt;!-- تعليق --&gt;</label>
+<label><input type="radio" name="q6" value="0"># تعليق</label>
+</div>
+
+<!-- 7 -->
+<div class="form-card">
+<p>7️⃣ أي عنصر يعمل قائمة مرقمة؟</p>
+<label><input type="radio" name="q7" value="1"> ol</label>
+<label><input type="radio" name="q7" value="0"> ul</label>
+<label><input type="radio" name="q7" value="0"> li</label>
+</div>
+
+<!-- 8 -->
+<div class="form-card">
+<p>8️⃣ HTTPS يعني؟</p>
+<label><input type="radio" name="q8" value="1"> اتصال آمن</label>
+<label><input type="radio" name="q8" value="0"> موقع بطيء</label>
+<label><input type="radio" name="q8" value="0"> لغة برمجة</label>
+</div>
+
+<!-- 9 -->
+<div class="form-card">
+<p>9️⃣ أي وسم لإنشاء رابط؟</p>
+<label><input type="radio" name="q9" value="1"> a</label>
+<label><input type="radio" name="q9" value="0"> link</label>
+<label><input type="radio" name="q9" value="0"> href</label>
+</div>
+
+<!-- 10 -->
+<div class="form-card">
+<p>🔟 خاصية تغيير حجم الخط؟</p>
+<label><input type="radio" name="q10" value="1"> font-size</label>
+<label><input type="radio" name="q10" value="0"> text-size</label>
+<label><input type="radio" name="q10" value="0"> font-style</label>
+</div>
+
+<!-- 11 -->
+<div class="form-card">
+<p>11️⃣ الامتداد الصحيح لملف JavaScript؟</p>
+<label><input type="radio" name="q11" value="1"> .js</label>
+<label><input type="radio" name="q11" value="0"> .java</label>
+<label><input type="radio" name="q11" value="0"> .html</label>
+</div>
+
+<!-- 12 -->
+<div class="form-card">
+<p>12️⃣ أي خاصية للمسافة الداخلية؟</p>
+<label><input type="radio" name="q12" value="1"> padding</label>
+<label><input type="radio" name="q12" value="0"> margin</label>
+<label><input type="radio" name="q12" value="0"> border</label>
+</div>
+
+<!-- 13 -->
+<div class="form-card">
+<p>13️⃣ القيمة الافتراضية لـ position؟</p>
+<label><input type="radio" name="q13" value="1"> static</label>
+<label><input type="radio" name="q13" value="0"> absolute</label>
+<label><input type="radio" name="q13" value="0"> fixed</label>
+</div>
+
+<!-- 14 -->
+<div class="form-card">
+<p>14️⃣ أي وسم للصورة؟</p>
+<label><input type="radio" name="q14" value="1"> img</label>
+<label><input type="radio" name="q14" value="0"> image</label>
+<label><input type="radio" name="q14" value="0"> pic</label>
+</div>
+
+<!-- 15 -->
+<div class="form-card">
+<p>15️⃣ ما هو DOM؟</p>
+<label><input type="radio" name="q15" value="1"> تمثيل الصفحة كشجرة عناصر</label>
+<label><input type="radio" name="q15" value="0"> لغة برمجة</label>
+<label><input type="radio" name="q15" value="0"> قاعدة بيانات</label>
+</div>
+
+<!-- 16 -->
+<div class="form-card">
+<p>16️⃣ أي خاصية لتغيير نوع الخط؟</p>
+<label><input type="radio" name="q16" value="1"> font-family</label>
+<label><input type="radio" name="q16" value="0"> text-style</label>
+<label><input type="radio" name="q16" value="0"> font-type</label>
+</div>
+
+<!-- 17 -->
+<div class="form-card">
+<p>17️⃣ أي وسم لإنشاء نموذج؟</p>
+<label><input type="radio" name="q17" value="1"> form</label>
+<label><input type="radio" name="q17" value="0"> table</label>
+<label><input type="radio" name="q17" value="0"> div</label>
+</div>
+
+<!-- 18 -->
+<div class="form-card">
+<p>18️⃣ JavaScript هي؟</p>
+<label><input type="radio" name="q18" value="1"> لغة برمجة</label>
+<label><input type="radio" name="q18" value="0"> نظام تشغيل</label>
+<label><input type="radio" name="q18" value="0"> قاعدة بيانات</label>
+</div>
+
+<!-- 19 -->
+<div class="form-card">
+<p>19️⃣ أي خاصية تخفي العنصر؟</p>
+<label><input type="radio" name="q19" value="1"> display:none</label>
+<label><input type="radio" name="q19" value="0"> visible:true</label>
+<label><input type="radio" name="q19" value="0"> hidden:block</label>
+</div>
+
+<!-- 20 -->
+<div class="form-card">
+<p>20️⃣ أي وسم لعنوان الصفحة؟</p>
+<label><input type="radio" name="q20" value="1"> title</label>
+<label><input type="radio" name="q20" value="0"> meta</label>
+<label><input type="radio" name="q20" value="0"> head</label>
+</div>
+
+<button type="button" onclick="submitExam()">إرسال الإجابات</button>
+</form>
+</div>
+
+<!-- النتيجة -->
+<div id="result-screen" class="hidden form-card">
+    <h2 id="final-score"></h2>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
